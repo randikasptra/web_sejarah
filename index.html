@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jelajah Serajah</title>
+  <link rel="stylesheet" href="./src/output.css" />
+
+
+  <!--Awal  Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Delta+Gothic+One&family=Quicksand:wght@300..700&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+
+
+
+  <!-- Akhir Font -->
+
+
+
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <!-- Icons -->
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+    <div class="container">
+      <div class="flex items-center justify-between relative">
+        <div class="px-4">
+          <a href="#home" class="font-bold text-lg text-blue-600 block py-6"> JelajahSejarah</a>
+        </div>
+        <div class="flex items-center px-4">
+          <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+            <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+            <span class="hamburger-line transition duration-300 ease-in-out"></span>
+            <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+          </button>
+
+          <nav id="navMenu"
+            class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+            <ul class="block lg:flex ">
+              <li class="group">
+                <a href="#" class="text-base text-black py-2 mx-8  flex group-hover:text-blue-700">Beranda</a>
+              </li>
+              <li class="group">
+                <a href="#" class="text-base text-black py-2 mx-8 flex group-hover:text-blue-700">Tentang
+                  Kami</a>
+              </li>
+              <li class="group">
+                <a href="#" class="text-base text-black py-2 mx-8 flex group-hover:text-blue-700">Product</a>
+              </li>
+              <li class="group">
+                <a href="#" class="text-base text-black py-2 mx-8 flex group-hover:text-blue-700">Fitur</a>
+              </li>
+              <li class="group">
+                <a href="#" class="text-base text-black py-2 mx-8 flex group-hover:text-blue-700">Kontak</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- End Navbar -->
+
+
+  <!-- Awal hero section -->
+
+  <!-- <div class="flex">
+    <div class="w-1/2 bg-purple-200 h-80">
+      <h1 class="mt-24 font-sora">"Menghidupkan Sejarah di Ujung Jari Anda"</h1>
+      <a href="" class="bg-blue-950 text-white text-sm m-6 py-2 px-3 rounded-lg">Menuju Materi</a>
+    </div>
+    <img src="./img/monasHero.png" alt="" class="absolute w-[11rem] ml-48 mt-20 ">
+    <div class="w-1/2 bg-blue-600 h-80"></div>
+  </div> -->
+
+
+
+
+  <div class="relative w-full h-72 flex  bg-cover bg-center" style="background-image: url('./img/monas.jpg');">
+    <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Overlay gradient -->
+    <h1 class="relative z-10 font-sora text-putih-0 text-md font-bold mt-24 ml-7">"Menghidupkan Sejarah di <br>
+      Ujung Jari Anda"</h1>
+  </div>
+  <div class="bg-slate-500 overflow-hidden">
+    <div class="marquee-container">
+      <div class="marquee py-2">
+        <p class="ini font-apacad text-putih-0">
+          Selamat datang di situs edukasi interaktif tentang sejarah Indonesia!, 
+          Menghidupkan kembali peristiwa penting dalam sejarah di ujung jari Anda, 
+          Jelajahi perjalanan sejarah Indonesia dengan tampilan interaktif dan menarik.
+        </p>
+        <p class="ini font-apacad text-putih-0">
+          Selamat datang di situs edukasi interaktif tentang sejarah Indonesia!, 
+          Menghidupkan kembali peristiwa penting dalam sejarah di ujung jari Anda, 
+          Jelajahi perjalanan sejarah Indonesia dengan tampilan interaktif dan menarik.
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  
+
+
+
+  <!-- Akhir hero section -->
+
+
+  <!-- Awal tentang kami -->
+  <div class="mt-11 text-center mx-10 border border-gray-500 p-9 rounded-xl"
+    style="box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), 0px -4px 8px rgba(0, 0, 0, 0.2), 4px 0px 8px rgba(0, 0, 0, 0.2), -4px 0px 8px rgba(0, 0, 0, 0.2);">
+    <h1 class="font-bold text-md my-2 font-sora">Tentang Kami</h1>
+    <p class="text-sm mt-9">Alasan saya membuat web ini adalah untuk memberikan sarana pembelajaran yang relevan bagi
+      generasi sekarang,
+      terutama Gen Alpha, yang sudah semakin jarang bersentuhan dengan buku dan lebih banyak mengandalkan gadget. Di
+      tengah kemajuan teknologi yang pesat, sejarah Indonesia—terutama mengenai pahlawan dan rumah adat—mulai
+      terlupakan.
+  </div>
+  <div class="mt-11 text-center mx-10 border border-gray-500 p-9 rounded-xl"
+    style="box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), 0px -4px 8px rgba(0, 0, 0, 0.2), 4px 0px 8px rgba(0, 0, 0, 0.2), -4px 0px 8px rgba(0, 0, 0, 0.2);">
+    <h1 class="font-bold text-md my-5 font-sora">Yang di Harapkan</h1>
+
+    <p class="text-sm mt-9"> Dengan membuat website ini, saya berharap dapat memperkenalkan kembali kekayaan sejarah dan
+      budaya Indonesia
+      melalui platform yang lebih akrab bagi anak-anak dan remaja zaman sekarang. Melalui media digital, mereka dapat
+      belajar dengan cara yang lebih interaktif dan menarik, sehingga pengetahuan tentang pahlawan dan rumah adat di
+      Indonesia tetap hidup dan terus diwariskan. Web ini akan menjadi alternatif modern untuk mengenalkan sejarah,
+      membuatnya lebih mudah diakses dan dinikmati kapan saja melalui gadget yang mereka gunakan sehari-hari.</p>
+
+  </div>
+  <!-- Akhir tentang kami -->
+  <div class="h-96"></div>
+
+
+  <!--  -->
+
+
+
+
+
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
