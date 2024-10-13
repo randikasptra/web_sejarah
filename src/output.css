@@ -792,24 +792,12 @@ html {
   max-width: 20rem;
 }
 
-.flex-1{
-  flex: 1 1 0%;
-}
-
 .origin-bottom-left{
   transform-origin: bottom left;
 }
 
 .origin-top-left{
   transform-origin: top left;
-}
-
-.flex-wrap{
-  flex-wrap: wrap;
-}
-
-.items-start{
-  align-items: flex-start;
 }
 
 .items-center{
@@ -1127,6 +1115,18 @@ html {
 }
 
 @media (min-width: 768px){
+  .md\:w-24{
+    width: 6rem;
+  }
+
+  .md\:w-96{
+    width: 24rem;
+  }
+
+  .md\:w-48{
+    width: 12rem;
+  }
+
   .md\:max-w-md{
     max-width: 28rem;
   }
