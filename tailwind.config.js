@@ -14,7 +14,6 @@ module.exports = {
         apacad : ['Afacad Flux']
       },
       backgroundImage: {
-        'h-product': "url('./img/hero-tentangkami.png')"
       },
       
     },

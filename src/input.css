@@ -10,7 +10,7 @@
 @layer base {
   html {
     font-family: 'Quicksand', sans-serif;
-    background: #D6C0B3;
+    background: #353378;
   }
 }
 
@@ -64,7 +64,7 @@
   100% {
     transform: translateX(-50%); /* Bergerak ke kiri hingga setengah lebar elemen */
   }
-}8u8 
+} 
 
 .ini {
   color: white; /* Mengatur warna teks menjadi putih */
@@ -74,3 +74,4 @@
 
 
 /* Akhir Marquee */
+
