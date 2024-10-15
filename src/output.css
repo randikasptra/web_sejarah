@@ -565,6 +565,7 @@ video {
 html {
   font-family: 'Quicksand', sans-serif;
   background: #efefef;
+  scroll-behavior: smooth;
 }
 
 .container{
@@ -633,6 +634,10 @@ html {
   z-index: 10;
 }
 
+.m-0{
+  margin: 0px;
+}
+
 .m-6{
   margin: 1.5rem;
 }
@@ -662,19 +667,24 @@ html {
   margin-bottom: 2.5rem;
 }
 
+.my-16{
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
 .my-2{
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
 
-.my-5{
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
+.my-3{
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
-.my-16{
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+.my-8{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .mb-12{
@@ -701,8 +711,16 @@ html {
   margin-left: 1.75rem;
 }
 
+.mt-0{
+  margin-top: 0px;
+}
+
 .mt-11{
   margin-top: 2.75rem;
+}
+
+.mt-12{
+  margin-top: 3rem;
 }
 
 .mt-20{
@@ -725,12 +743,24 @@ html {
   margin-top: 2.25rem;
 }
 
-.mt-96{
-  margin-top: 24rem;
-}
-
 .mt-16{
   margin-top: 4rem;
+}
+
+.ml-6{
+  margin-left: 1.5rem;
+}
+
+.ml-24{
+  margin-left: 6rem;
+}
+
+.ml-12{
+  margin-left: 3rem;
+}
+
+.mt-8{
+  margin-top: 2rem;
 }
 
 .box-border{
@@ -765,12 +795,12 @@ html {
   height: 20rem;
 }
 
-.h-96{
-  height: 24rem;
-}
-
 .w-1\/2{
   width: 50%;
+}
+
+.w-12{
+  width: 3rem;
 }
 
 .w-16{
@@ -785,8 +815,16 @@ html {
   width: 75%;
 }
 
-.w-36{
-  width: 9rem;
+.w-32{
+  width: 8rem;
+}
+
+.w-60{
+  width: 15rem;
+}
+
+.w-64{
+  width: 16rem;
 }
 
 .w-\[11rem\]{
@@ -837,8 +875,16 @@ html {
   gap: 1.5rem;
 }
 
+.gap-12{
+  gap: 3rem;
+}
+
 .overflow-hidden{
   overflow: hidden;
+}
+
+.scroll-smooth{
+  scroll-behavior: smooth;
 }
 
 .rounded-3xl{
@@ -909,6 +955,10 @@ html {
   background-position: center;
 }
 
+.p-0{
+  padding: 0px;
+}
+
 .p-6{
   padding: 1.5rem;
 }
@@ -937,14 +987,14 @@ html {
   padding-bottom: 0.5rem;
 }
 
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .py-5{
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-}
-
-.py-6{
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
 }
 
 .py-9{
@@ -952,8 +1002,16 @@ html {
   padding-bottom: 2.25rem;
 }
 
+.pb-60{
+  padding-bottom: 15rem;
+}
+
 .pt-11{
   padding-top: 2.75rem;
+}
+
+.pt-20{
+  padding-top: 5rem;
 }
 
 .text-center{
@@ -975,6 +1033,11 @@ html {
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-base{
@@ -1001,14 +1064,13 @@ html {
   font-weight: 700;
 }
 
+.font-semibold{
+  font-weight: 600;
+}
+
 .text-black{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
-.text-blue-600{
-  --tw-text-opacity: 1;
-  color: rgb(37 99 235 / var(--tw-text-opacity));
 }
 
 .text-putih-0{
