@@ -115,7 +115,7 @@
 }
 
 /*
-! tailwindcss v3.4.13 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.14 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -558,7 +558,7 @@ video {
 
 /* Make elements with the HTML hidden attribute stay hidden by default */
 
-[hidden] {
+[hidden]:where(:not([hidden="until-found"])) {
   display: none;
 }
 
@@ -699,12 +699,24 @@ html {
   margin-bottom: 1rem;
 }
 
+.ml-12{
+  margin-left: 3rem;
+}
+
+.ml-24{
+  margin-left: 6rem;
+}
+
 .ml-4{
   margin-left: 1rem;
 }
 
 .ml-48{
   margin-left: 12rem;
+}
+
+.ml-6{
+  margin-left: 1.5rem;
 }
 
 .ml-7{
@@ -723,6 +735,10 @@ html {
   margin-top: 3rem;
 }
 
+.mt-16{
+  margin-top: 4rem;
+}
+
 .mt-20{
   margin-top: 5rem;
 }
@@ -739,28 +755,12 @@ html {
   margin-top: 1.5rem;
 }
 
-.mt-9{
-  margin-top: 2.25rem;
-}
-
-.mt-16{
-  margin-top: 4rem;
-}
-
-.ml-6{
-  margin-left: 1.5rem;
-}
-
-.ml-24{
-  margin-left: 6rem;
-}
-
-.ml-12{
-  margin-left: 3rem;
-}
-
 .mt-8{
   margin-top: 2rem;
+}
+
+.mt-9{
+  margin-top: 2.25rem;
 }
 
 .box-border{
@@ -867,16 +867,16 @@ html {
   justify-content: space-around;
 }
 
+.gap-12{
+  gap: 3rem;
+}
+
 .gap-3{
   gap: 0.75rem;
 }
 
 .gap-6{
   gap: 1.5rem;
-}
-
-.gap-12{
-  gap: 3rem;
 }
 
 .overflow-hidden{
