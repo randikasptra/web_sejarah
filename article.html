@@ -15,10 +15,14 @@
     rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
-
-
   <!-- Akhir Font -->
 
+  <!-- Alert -->
+   <!-- SweetAlert2 CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+   <!-- SweetAlert2 JS -->
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+  <!-- Alert -->
 
 
 
@@ -28,78 +32,84 @@
 </head>
 
 <body>
+<!-- Navbar -->
+<header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+  <div class="container">
+    <div class="flex items-center justify-between relative">
+      <div class="px-4">
+        <a href=""><img src="./img/js1.png" alt="" class="w-12 my-3"></a>
+      </div>
+      <div class="flex items-center px-4">
+        <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+          <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+          <span class="hamburger-line transition duration-300 ease-in-out"></span>
+          <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+        </button>
 
-  <!-- Navbar -->
-  <!-- Navbar -->
-  <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
-    <div class="container">
-      <div class="flex items-center justify-between relative">
-        <div class="px-4">
-          <a href=""><img src="./img/js1.png" alt="" class="w-12 my-3"></a>
-        </div>
-        <div class="flex items-center px-4">
-          <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
-            <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
-            <span class="hamburger-line transition duration-300 ease-in-out"></span>
-            <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
-          </button>
-
-          <nav id="navMenu"
-            class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
-            <ul class="block lg:flex ">
-              <li class="group">
-                <a href="./index.html"
-                  class="text-base text-black py-2 mx-8  flex group-hover:text-blue-700">Beranda</a>
-              </li>
-              <li class="group">
-                <a href="./index.html" class="text-base text-black py-2 mx-8 flex group-hover:text-blue-700">Tentang
-                  Kami</a>
-              </li>
-              <li class="group">
-                <a href="./index.html" class="text-base text-black py-2 mx-8 flex group-hover:text-blue-700">Anggota
-                  Kelompok</a>
-              </li>
-              <li class="group">
-                <a href="./article.html" class="text-base text-black py-2 mx-8 flex group-hover:text-blue-700">Materi</a>
-              </li>
-              <li class="group">
-                <a href="./quiz.html" class="text-base text-black py-2 mx-8 flex group-hover:text-blue-700">Quiz</a>
-              </li>
-              <li class="group">
-                <a href="./article.html"
-                  class="text-base text-black py-2 mx-8 flex group-hover:text-blue-700">Kontak</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+        <nav id="navMenu"
+          class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+          <ul class="block lg:flex ">
+            <li class="group">
+              <a href="./index.html"
+                class="text-base text-black py-2 mx-8  flex group-hover:text-blue-950 hover:font-bold">Beranda</a>
+            </li>
+            <li class="group">
+              <a href="./index.html" class="text-base text-black py-2 mx-8 flex group-hover:text-blue-950 hover:font-bold">Tentang
+                Kami</a>
+            </li>
+            <li class="group">
+              <a href="./index.html" class="text-base text-black py-2 mx-8 flex group-hover:text-blue-950 hover:font-bold">Anggota
+                Kelompok</a>
+            </li>
+            <li class="group">
+              <a href="./article.html"
+                class="text-base text-black py-2 mx-8 flex group-hover:text-blue-950 hover:font-bold">Materi</a>
+            </li>
+            <li class="group">
+              <a href="./quiz.html" class="text-base text-black py-2 mx-8 flex group-hover:text-blue-950 hover:font-bold">Quiz</a>
+            </li>
+            <li class="group">
+              <a href="./index.html" class="text-base text-black py-2 mx-8 flex group-hover:text-blue-950 hover:font-bold">Kontak</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
-  </header>
-  <!-- End Navbar -->
+  </div>
+</header>
+<!-- End Navbar -->
   <!-- End Navbar -->
 
   <!-- Awal Hero -->
-  <div class="relative w-full h-72 flex  bg-cover bg-center" style="background-image: url('./img/monas.jpg');">
-    <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Overlay gradient -->
-    <h1 class="relative z-10 font-sora text-putih-0 text-md font-bold mt-24 ml-7">"Menghidupkan Sejarah di <br>
-      Ujung Jari Anda"</h1>
-  </div>
-  <div class="bg-blue-950 overflow-hidden">
-    <div class="marquee-container">
-      <div class="marquee py-2">
-        <p class="ini font-apacad text-putih-0">
-          Selamat datang di situs edukasi interaktif tentang sejarah Indonesia!,
-          Menghidupkan kembali peristiwa penting dalam sejarah di ujung jari Anda,
-          Jelajahi perjalanan sejarah Indonesia dengan tampilan interaktif dan menarik.
-        </p>
-        <p class="ini font-apacad text-putih-0">
-          Selamat datang di situs edukasi interaktif tentang sejarah Indonesia!,
-          Menghidupkan kembali peristiwa penting dalam sejarah di ujung jari Anda,
-          Jelajahi perjalanan sejarah Indonesia dengan tampilan interaktif dan menarik.
-        </p>
-      </div>
+  <div id="beranda" class="relative w-full h-72 flex bg-cover bg-center md:h-[40rem]"
+  style="background-image: url('./img/monas.jpg'); background-size: cover; background-position: center;">
+  <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Overlay gradient -->
+  <h1
+    class="relative z-10 font-sora text-putih-0 font-bold mt-24 ml-7 text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl md:my-auto">
+    "Menghidupkan Sejarah di <br> Ujung Jari Anda"
+  </h1>
+</div>
+
+
+
+
+<!-- Awal hero section -->
+<div class="bg-blue-950 overflow-hidden">
+  <div class="marquee-container">
+    <div class="marquee py-2 md:py-4 ">
+      <p class="ini font-apacad text-putih-0 md:text-2xl">
+        Selamat datang di situs edukasi interaktif tentang sejarah Indonesia!,
+        Menghidupkan kembali peristiwa penting dalam sejarah di ujung jari Anda,
+        Jelajahi perjalanan sejarah Indonesia dengan tampilan interaktif dan menarik.
+      </p>
+      <p class="ini font-apacad text-putih-0">
+        Selamat datang di situs edukasi interaktif tentang sejarah Indonesia!,
+        Menghidupkan kembali peristiwa penting dalam sejarah di ujung jari Anda,
+        Jelajahi perjalanan sejarah Indonesia dengan tampilan interaktif dan menarik.
+      </p>
     </div>
   </div>
+</div>
   <!-- Akhir Hero -->
 
   <!-- Article awal  -->
@@ -156,8 +166,7 @@
         lokal
         sebagai bagian dari perjuangan kemerdekaan Indonesia.
       </p>
-
-      <a href="" class="py-2 bg-blue-950 px-4 rounded-xl text-center">Baca Selengkapnya</a>
+      <button class=" py-2 bg-blue-950 px-4 rounded-xl text-center" onclick="showAlert()"> Baca Selengkapnya</button>
     </div>
     <!-- Akhir Ki Hajar Dewantara -->
 
@@ -201,6 +210,8 @@
         berhasil melawan pasukan Belanda, memberikan pelajaran dalam strategi militer. Perjuangannya juga menginspirasi
         karya sastra, seni, dan budaya Indonesia, menjadikannya tokoh legendaris dalam sejarah.
       </p>
+
+      <button class=" py-2 bg-blue-950 px-4 rounded-xl text-center" onclick="showAlert()"> Baca Selengkapnya</button>
     </div>
     <!-- Akhir Pangeran Diponegoro -->
 
@@ -247,7 +258,7 @@
         nasionalis dan menolak kompromi dengan Belanda dalam perjuangan kemerdekaan.
       </p>
 
-      <a href="" class="py-2 bg-blue-950 px-4 rounded-xl text-center">Baca Selengkapnya</a>
+      <button class=" py-2 bg-blue-950 px-4 rounded-xl text-center" onclick="showAlert()"> Baca Selengkapnya</button>
     </div>
     <!-- Akhir Tan Malaka-->
 
@@ -294,6 +305,8 @@
         Perjanjian Bongaya, yang memberikan banyak keuntungan kepada VOC, termasuk hak monopoli perdagangan.
         Meskipun begitu, semangatnya mempertahankan kedaulatan Makassar tetap diakui hingga kini.
       </p>
+
+      <button class=" py-2 bg-blue-950 px-4 rounded-xl text-center" onclick="showAlert()"> Baca Selengkapnya</button>
     </div>
     <!-- Akhir Sultan Hasanuddin -->
 
@@ -340,7 +353,7 @@
         nasionalisme melalui karya-karyanya yang menginspirasi persatuan bangsa.
       </p>
 
-      <a href="" class="py-2 bg-blue-950 px-4 rounded-xl text-center">Baca Selengkapnya</a>
+      <button class=" py-2 bg-blue-950 px-4 rounded-xl text-center" onclick="showAlert()"> Baca Selengkapnya</button>
     </div>
     <!-- Akhir Mohammad Yamin -->
   </div>
@@ -376,7 +389,7 @@
         rumah ini dapat berdiri dan bertahan lama. Untuk pembangunan Rumoh Aceh ini diadakan rapat keluarga terlebih
         dahulu yang dipimpin tetua adat. Rapat ini dibuat agar tidak ada perpecahan antara anggota keluarga mengenai
         pendirian rumah. Hal itu juga melambangkan usaha untuk menjaga persatuan keluarga.</p>
-
+        <button class=" mt-4 py-2 bg-blue-950 px-4 rounded-xl text-center" onclick="showAlert()"> Baca Selengkapnya</button>
       <!-- Ini Bagian 2 -->
       <div class=" justify-between items-center mb-4 gap-3">
         <div class="mt-12">
@@ -413,6 +426,7 @@
         <img src="./img/bolon3.jpg" alt="" class="w-24 rounded-xl">
         <img src="./img/bolon4.jpg" alt="" class="w-24 rounded-xl">
       </div>
+      <button class=" mt-4 py-2 bg-blue-950 px-4 rounded-xl text-center" onclick="showAlert()"> Baca Selengkapnya</button>
 
 
       <!-- Bagian ketiga -->
@@ -460,6 +474,8 @@
       </div>
       <p class="text-sm text-justify mt-4 mx-4">• Rumah gadang memanjang dari utara ke selatan untuk melindungi
         penghuninya dari sinar matahari dan hembusan angin secara langsung.</p>
+        <button class=" mt-4 py-2 bg-blue-950 px-4 rounded-xl text-center" onclick="showAlert()"> Baca Selengkapnya</button>
+
     </div>
 
 

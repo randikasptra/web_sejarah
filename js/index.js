@@ -54,3 +54,15 @@ function submitQuiz() {
     feedback += `<br>Skor akhir Anda: ${score}/${maxScore}`;
     document.getElementById('result').innerHTML = feedback;
 }
+
+ 
+
+
+function showAlert() {
+    Swal.fire({
+        title: 'Mohon Maaf',
+        text: 'Masih dalam pengembangan Sistem',
+        icon: 'warning',
+        confirmButtonText: 'OK'
+    });
+}

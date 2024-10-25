@@ -16,11 +16,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
-
-
-
   <!-- Akhir Font -->
 
+
+  <!-- Awal AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Akhir AOS -->
 
 
 
@@ -48,26 +49,28 @@
             class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
             <ul class="block lg:flex ">
               <li class="group">
-                <a href="#beranda" class="text-base text-black py-2 mx-8  flex group-hover:text-blue-700">Beranda</a>
+                <a href="#beranda"
+                  class="text-base text-black py-2 mx-8  flex group-hover:text-blue-950 hover:font-bold">Beranda</a>
               </li>
               <li class="group">
-                <a href="#tentangKami" class="text-base text-black py-2 mx-8 flex group-hover:text-blue-700">Tentang
+                <a href="#tentangKami"
+                  class="text-base text-black py-2 mx-8 flex group-hover:text-blue-950 hover:font-bold">Tentang
                   Kami</a>
               </li>
               <li class="group">
-                <a href="#kelompok" class="text-base text-black py-2 mx-8 flex group-hover:text-blue-700">Anggota
+                <a href="#kelompok"
+                  class="text-base text-black py-2 mx-8 flex group-hover:text-blue-950 hover:font-bold">Anggota
                   Kelompok</a>
               </li>
               <li class="group">
                 <a href="./article.html"
-                  class="text-base text-black py-2 mx-8 flex group-hover:text-blue-700">Materi</a>
+                  class="text-base text-black py-2 mx-8 flex group-hover:text-blue-950 hover:font-bold">Materi</a>
               </li>
               <li class="group">
-                <a href="./quiz.html" class="text-base text-black py-2 mx-8 flex group-hover:text-blue-700">Quiz</a>
+                <a href="./quiz.html"
+                  class="text-base text-black py-2 mx-8 flex group-hover:text-blue-950 hover:font-bold">Quiz</a>
               </li>
-              <li class="group">
-                <a href="#footer" class="text-base text-black py-2 mx-8 flex group-hover:text-blue-700">Kontak</a>
-              </li>
+
             </ul>
           </nav>
         </div>
@@ -77,32 +80,23 @@
   <!-- End Navbar -->
 
 
-  <!-- Awal hero section -->
-
-  <!-- <div class="flex">
-    <div class="w-1/2 bg-purple-200 h-80">
-      <h1 class="mt-24 font-sora">"Menghidupkan Sejarah di Ujung Jari Anda"</h1>
-      <a href="" class="bg-blue-950 text-white text-sm m-6 py-2 px-3 rounded-lg">Menuju Materi</a>
-    </div>
-    <img src="./img/monasHero.png" alt="" class="absolute w-[11rem] ml-48 mt-20 ">
-    <div class="w-1/2 bg-blue-600 h-80"></div>
-  </div> -->
-
-
-
-
-  <div id="beranda" class="relative w-full h-72 flex  bg-cover bg-center"
-    style="background-image: url('./img/monas.jpg');">
+  <div id="beranda" class="relative w-full h-72 flex bg-cover bg-center md:h-[40rem]"
+    style="background-image: url('./img/monas.jpg'); background-size: cover; background-position: center;">
     <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Overlay gradient -->
-    <h1 class="relative z-10 font-sora text-putih-0 text-md font-bold mt-24 ml-7">"Menghidupkan Sejarah di <br>
-      Ujung Jari Anda"</h1>
+    <h1
+      class="relative z-10 font-sora text-putih-0 font-bold mt-24 ml-7 text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl md:my-auto">
+      "Menghidupkan Sejarah di <br> Ujung Jari Anda"
+    </h1>
   </div>
 
 
+
+
+  <!-- Awal hero section -->
   <div class="bg-blue-950 overflow-hidden">
     <div class="marquee-container">
-      <div class="marquee py-2">
-        <p class="ini font-apacad text-putih-0">
+      <div class="marquee py-2 md:py-4 ">
+        <p class="ini font-apacad text-putih-0 md:text-2xl">
           Selamat datang di situs edukasi interaktif tentang sejarah Indonesia!,
           Menghidupkan kembali peristiwa penting dalam sejarah di ujung jari Anda,
           Jelajahi perjalanan sejarah Indonesia dengan tampilan interaktif dan menarik.
@@ -115,20 +109,18 @@
       </div>
     </div>
   </div>
-
-
-
-
-
   <!-- Akhir hero section -->
 
 
   <!-- Awal tentang kami -->
-  <div class="" id="tentangKami">
-    <h1 class="font-apacad font-bold text-3xl text-center mt-20">Tentang Kami</h1>
+  <div class="md:mx-32" id="tentangKami">
+    <h1 class="font-apacad font-bold text-3xl text-center mt-20 md:text-5xl" data-aos="fade-up">Tentang <span
+        class=" underline underline-offset-1 text-blue-950 ">Kami</span></h1>
     <div class="mt-11 text-center mx-10 border border-gray-500 p-9 rounded-xl bg-white"
-      style="box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), 0px -4px 8px rgba(0, 0, 0, 0.2), 4px 0px 8px rgba(0, 0, 0, 0.2), -4px 0px 8px rgba(0, 0, 0, 0.2);">
-      <p class="text-sm mt-9">Alasan kami membuat web ini adalah untuk memberikan sarana pembelajaran yang relevan bagi
+      style="box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), 0px -4px 8px rgba(0, 0, 0, 0.2), 4px 0px 8px rgba(0, 0, 0, 0.2), -4px 0px 8px rgba(0, 0, 0, 0.2);"
+      data-aos="fade-up">
+      <p class="text-sm my-4 md:text-lg">Alasan kami membuat web ini adalah untuk memberikan sarana pembelajaran yang
+        relevan bagi
         generasi sekarang,
         terutama Gen Alpha, yang sudah semakin jarang bersentuhan dengan buku dan lebih banyak mengandalkan gadget. Di
         tengah kemajuan teknologi yang pesat, sejarah Indonesia—terutama mengenai pahlawan dan rumah adat—mulai
@@ -144,30 +136,37 @@
   <!-- Akhir tentang kami -->
 
   <!-- fitur awal  -->
-  <div class="h-80 bg-blue-950   justify-center mt-24 text-center pt-11">
-    <h1 class="font-sora text-putih-0 font-bold text-2xl ">Fitur Yang Diberikan</h1>
+  <div class="h-80 bg-blue-950   justify-center mt-24 text-center pt-11 md:h-96" data-aos="fade-up">
+    <h1 class="font-sora text-putih-0 font-bold text-2xl md:text-3xl ">Fitur Yang Diberikan</h1>
 
-    <div class="flex gap-6 justify-center my-16">
+    <div class="flex gap-6 justify-center my-16 ">
       <a href="./article.html">
-        <div class="text-center bg-gray-800 rounded-3xl h-32 border ">
+        <div
+          class="text-center bg-gray-800 rounded-3xl h-32 border md:w-40 md:h-40 transform transition-transform duration-600 hover:scale-110"
+          data-aos="zoom-in-right">
           <h1 class="text-sm font-bold text-putih-0 mt-4">Pahlawan</h1>
-          <img src="./img/logo pahlawan.png" alt="" class="w-24">
+          <img src="./img/logo pahlawan.png" alt="" class="w-24 mx-auto my-auto">
         </div>
       </a>
 
       <a href="./article.html">
-        <div class="text-center bg-gray-800 rounded-3xl h-32 border">
+        <div
+          class="text-center bg-gray-800 rounded-3xl h-32 border md:w-40 md:h-40 transform transition-transform duration-300 hover:scale-110"
+          data-aos="zoom-in-up">
           <h1 class="text-sm font-bold text-putih-0 mt-4">Rumah Adat</h1>
-          <img src="./img/logo rumah adat.png" alt="" class="w-24">
+          <img src="./img/logo rumah adat.png" alt="" class="w-24 mx-auto">
         </div>
       </a>
 
       <a href="./quiz.html">
-        <div class="text-center bg-gray-800 rounded-3xl h-32 border">
+        <div
+          class="text-center bg-gray-800 rounded-3xl h-32 border md:w-40 md:h-40 transform transition-transform duration-300 hover:scale-110"
+          data-aos="zoom-in-left">
           <h1 class="text-sm font-bold text-putih-0 my-2">Quiz</h1>
-          <img src="./img/logo quiz.png" alt="" class="w-24">
+          <img src="./img/logo quiz.png" alt="" class="w-24 mx-auto">
         </div>
       </a>
+
     </div>
 
   </div>
@@ -175,27 +174,30 @@
 
 
   <!-- <div class=""> -->
-  <div class="mt-11 " id="kelompok">
-    <h1 class="font-bold text-2xl text-center my-10 font-sora">Anggota Kelompok 5 F22</h1>
-    <div class="flex justify-center ">
-      <div class="box-border px-2 w-full max-w-xs md:max-w-md lg:max-w-lg">
+  <div class="mt-11 md:flex md:mt-48 " id="kelompok">
+    <h1 class="font-bold text-2xl text-center my-10 font-sora md:my-auto md:ml-16 md:text-4xl" data-aos="fade-up">
+      Anggota Kelompok 5 F22
+    </h1>
+    <div class="flex justify-center md:ml-48 md:mr-8 ">
 
-        <div class="bg-blue-950 w-full text-center py-9 rounded-xl w-32">
-          <img src="./img/randi.jpg" alt="" class="w-32 mx-auto rounded-lg">
-          <div class="text-putih-0 mt-6 font-semibold">
+      <div class="box-border px-2 w-full max-w-xs  lg:max-w-lg ">
+
+        <div class="bg-blue-950 w-full text-center py-9 rounded-xl mx-auto md:w-64" data-aos="fade-up-right">
+          <img src="./img/randi.jpg" alt="" class="w-32 mx-auto rounded-lg ">
+          <div class="text-putih-0 mt-6 font-semibold md:mx-auto">
             <h1>Nama : Muhammad <br> Randika</h1>
             <h1>NIM : 2203010535</h1>
           </div>
         </div>
 
-        <div class="bg-blue-950 w-full text-center py-9 rounded-xl mt-20">
+        <div class="bg-blue-950 w-full text-center py-9 rounded-xl mt-20 md:w-64" data-aos="fade-up-right">
           <img src="./img/rizki.jpg" alt="" class="w-32 mx-auto rounded-lg">
           <div class="text-putih-0 mt-6 font-semibold">
             <h1>Nama : Rizki Rinaldi</h1>
             <h1>NIM : 2203010272</h1>
           </div>
         </div>
-        <div class="bg-blue-950 w-full text-center py-9 rounded-xl mt-20">
+        <div class="bg-blue-950 w-full text-center py-9 rounded-xl mt-20 md:w-64" data-aos="fade-up-right">
           <img src="./img/Alfiyan.jpg" alt="" class="w-32 mx-auto rounded-lg">
           <div class="text-putih-0 mt-6 font-semibold">
             <h1>Nama : Alfian Nugroho</h1>
@@ -205,7 +207,7 @@
       </div>
 
       <div class="box-border px-2 w-full max-w-xs md:max-w-md lg:max-w-lg ml-4 w-1/2">
-        <div class="bg-blue-950 w-full text-center py-9 rounded-xl mt-20">
+        <div class="bg-blue-950 w-full text-center py-9 rounded-xl mt-20 md:w-64" data-aos="fade-up-left">
           <img src="./img/Annisa.jpg" alt="" class="w-32 mx-auto rounded-lg">
           <div class="text-putih-0 mt-6 font-semibold">
             <h1>Nama : Annisa Nur <br> Rohmah</h1>
@@ -213,7 +215,7 @@
           </div>
         </div>
 
-        <div class="bg-blue-950 w-full text-center py-9 rounded-xl mt-20 w-24">
+        <div class="bg-blue-950 w-full text-center py-9 rounded-xl mt-20 w-24 md:w-64" data-aos="fade-up-left">
           <img src="./img/Alawi.jpg" alt="" class="w-32 mx-auto rounded-lg">
           <div class="text-putih-0 mt-6 font-semibold">
             <h1>Nama : Alawi</h1>
@@ -235,7 +237,10 @@
 
 
 
-
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="./js/index.js"></script>
 </body>
 
